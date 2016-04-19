@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+  body{
+    background:url("http://img2.3lian.com/2014/f4/197/d/101.jpg")no-repeat;
+   background-size:1400px 1100px;
+    font-size:16px; 
+  }
+	a{
+		font-size:5em;
+	}
+	a:link{
+		color:blank;
+      background:#ff0;-
+      text-decoration:none;
+	}
+	a:visited{
+        color:#2d2;
+	}
+	a:hover{
+		color:#d2d;
+	}
+	a:active{
+		color:blue;
+	}
+	.c{
+	  width: 50px;
+      height:100px;
+      left:180px;
+      border: 2px solid purple;
+      position: relative;
+	}
+	  .c .phone{
+      width:900px;
+      height: 900px;
+      background: url("http://e.hiphotos.baidu.com/zhidao/pic/item/242dd42a2834349b4fcc5957cfea15ce37d3be1d.jpg") no-repeat;
+      position: absolute;
+      left:70px;
+      top:-70px;
+      opacity: 0;
+      transition:all 2s;
+       text-align:center;
+    }
+    .c:hover .phone{
+      opacity: 1;
+    }
+    
+</style>
+</head>
+<body>
+	<a href="//www.baidu.com">百度</a>
+  <div class="c">
+    <div class="phone"></div>
+  </div>
+</html>
