@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+    figure{
+      width:480px;
+      height:320px;
+      border:10px solid #2d2;
+      box-shadow:0px 0px 15px 2px #d2d;
+      overflow:hidden;
+      position:relative;
+      border-radius:20px;
+    }
+    figure img{
+      width:850px;
+      margin:-100px;
+      transform:rotate(-20deg);
+      transition:all 1s;
+    }
+    figure:hover img{
+      transform:rotate(20deg);
+      cursor:pointer;
+    }
+   figure figcaption{
+      position:absolute;
+      z-index:3;
+      left:0;
+      bottom:0;
+      height:30px;
+      width:100%;
+      color:rgba(0,60,0,0);
+      font-weight:bold;
+      background-color:rgba(255,255,255,.6);
+      text-align:center;
+      line-height:30px;
+      transition:color .5s,background-color 1s;
+    }
+    figure:hover figcaption{
+      color:rgba(0,0,255,.9);
+      background-color:rgba(0,255,60,.6);
+    }
+
+</style>
+<body>
+  <figure>
+    <figcaption>仰卧起坐起不来了</figcaption>
+    <img src="http://www.bz55.com/uploads1/allimg/120212/1_120212213716_1.jpg" alt="">
+  </figure>
+</body>
+</html>
